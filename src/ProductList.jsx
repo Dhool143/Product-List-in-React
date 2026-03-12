@@ -19,7 +19,7 @@ function ProductList() {
         {id: 2,
             name: "phone",
             description: "Latest samartphine with greats camer.",
-            price: 800,
+            price: 1200,
             image: phone
 
         },
@@ -27,7 +27,7 @@ function ProductList() {
         { id: 3,
             name: "Headphones",
             description: "Noise cancelling wireless headphones.",
-            price: 200,
+            price:  270,
             image: headphones
         
 
@@ -37,13 +37,13 @@ function ProductList() {
     ];
 
     return (
-        <dive>
+        <div>
 
             { products.map((product) => (
 
           <div key={product.id} className="product-card">
 
-            <img src={product.image} alt={"product.name"}  width="200"/>
+            <img src={product.image} alt={product.name}  width="200"/>
                     <h2>{product.name}</h2>
                     <p>{product.description}</p>
                     <p> price: ${product.price}</p>
@@ -54,7 +54,7 @@ function ProductList() {
 
 
             ))}
-        </dive>
+        </div>
 
 );
 
